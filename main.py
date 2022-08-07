@@ -2,8 +2,8 @@ import logging
 import urllib.request
 import json
 
-FOLDER_ID = "b1g4kr4rssk1hvmadd49"  # Идентификатор каталога
-IAM_TOKEN = "t1.9euelZqcxovLnZmPl8iRm8zOxpzHle3rnpWai8_Oyc6Pm5qYnpvIlIuNm5Dl9PdKfwJ1-e9JRCnN3fT3Ci4AdfnvSUQpzQ.yJ2J-D0X-qieW7xCDKPeB6vAMW5cYCMH5i3jxr4e9xD6rTmbWW18jeEjparP8S61capQVVclJ20vA0pUabHFCw"  # IAM-токен
+FOLDER_ID = ""  # Идентификатор каталога
+IAM_TOKEN = ""  # IAM-токен
 
 from telegram import Update
 from telegram.ext import (
@@ -89,7 +89,7 @@ def voice(update: Update, context: CallbackContext) -> int:
 def main() -> None:
     """Run the bot."""
     # Create the Updater and pass it your bot's token.
-    updater = Updater("2003103737:AAGjcP6B2Eupe8td6hCdWCAY0Mq4V1giUDM")
+    updater = Updater("")
 
     # Get the dispatcher to register handlers
     dispatcher = updater.dispatcher
